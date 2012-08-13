@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "simplecov"
   s.add_development_dependency "yard"
 
-  s.add_dependency "httperfrb", "=0.3.0pre2"
+  s.add_dependency "httperfrb", "~>0.3.0"
   s.add_dependency "rmagick", "~>2.13.1"
   s.add_dependency "gruff", "~>0.3.6"
 
