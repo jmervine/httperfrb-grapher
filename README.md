@@ -3,6 +3,11 @@ HTTPerf::Grapher
 
 ### [Documentation](http://rubyops.github.com/httperfrb-grapher/doc/) | [Coverage](http://rubyops.github.com/httperfrb-grapher/coverage/) | [RSpec Out](https://github.com/rubyops/httperfrb-grapher/blob/master/RSPECOUT.md)
 
+
+### WARNING
+
+This isn't working in all cases. 
+
 ## Installing 'httperfrb'
 
 #### See: [httperfrb](http://www.github.com/rubyops/httperfrb/)
