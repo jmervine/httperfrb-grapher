@@ -1,16 +1,12 @@
+require 'gruff'
 class HTTPerf
   class Grapher
     attr_accessor :output_file
     attr_reader   :graph_settings
 
     def initialize gs={}
-      begin
-        require 'gruff'
-        @output_file    = "httperf_graph.png"
-        @graph_settings = default_graph_settings.merge(gs)
-      rescue LoadError
-        puts "WARNING: HTTPerf::Grapher not available -- please install 'gruff'."
-      end
+      @output_file    = "httperf_graph.png"
+      @graph_settings = default_graph_settings.merge(gs)
     end
 
     def graph_settings=(s)
