@@ -8,8 +8,6 @@
         1,
         1,
         1,
-        1,
-        null,
         null
       ],
       "/home/jmervine/Development/httperfrb-grapher/lib/httperf/grapher.rb": [
@@ -69,6 +67,6 @@
         null
       ]
     },
-    "timestamp": 1344884960
+    "timestamp": 1344886355
   }
 }

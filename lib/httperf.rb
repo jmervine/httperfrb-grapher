@@ -4,6 +4,4 @@ require 'httperf'
 require 'httperf/parser'
 require 'httperf/grapher'
 require 'httperf/grapher/version'
-class HTTPerf
-end
 
