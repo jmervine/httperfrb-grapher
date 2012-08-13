@@ -1,6 +1,6 @@
 class HTTPerf
   class Grapher
-    VERSION = "0.0.3pre1"
+    VERSION = "0.0.3"
   end
 end
 

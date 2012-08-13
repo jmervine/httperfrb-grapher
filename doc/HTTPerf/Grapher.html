@@ -257,13 +257,13 @@ A new instance of Grapher
       <pre class="lines">
 
 
-7
-8
-9
-10</pre>
+12
+13
+14
+15</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/httperf/grapher.rb', line 7</span>
+      <pre class="code"><span class="info file"># File 'lib/httperf/grapher.rb', line 12</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span> <span class='id identifier rubyid_gs'>gs</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span>
   <span class='ivar'>@output_file</span>    <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>httperf_graph.png</span><span class='tstring_end'>&quot;</span></span>
@@ -308,12 +308,12 @@ Returns the value of attribute graph_settings
       <pre class="lines">
 
 
-5
-6
-7</pre>
+10
+11
+12</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/httperf/grapher.rb', line 5</span>
+      <pre class="code"><span class="info file"># File 'lib/httperf/grapher.rb', line 10</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_graph_settings'>graph_settings</span>
   <span class='ivar'>@graph_settings</span>
@@ -352,12 +352,12 @@ Returns the value of attribute output_file
       <pre class="lines">
 
 
-4
-5
-6</pre>
+9
+10
+11</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/httperf/grapher.rb', line 4</span>
+      <pre class="code"><span class="info file"># File 'lib/httperf/grapher.rb', line 9</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_output_file'>output_file</span>
   <span class='ivar'>@output_file</span>
@@ -389,11 +389,6 @@ Returns the value of attribute output_file
       <pre class="lines">
 
 
-16
-17
-18
-19
-20
 21
 22
 23
@@ -411,10 +406,15 @@ Returns the value of attribute output_file
 35
 36
 37
-38</pre>
+38
+39
+40
+41
+42
+43</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/httperf/grapher.rb', line 16</span>
+      <pre class="code"><span class="info file"># File 'lib/httperf/grapher.rb', line 21</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_graph'>graph</span> <span class='id identifier rubyid_results'>results</span>
   <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>missing connection times</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_results'>results</span><span class='period'>.</span><span class='id identifier rubyid_has_key?'>has_key?</span><span class='lparen'>(</span><span class='symbol'>:connection_times</span><span class='rparen'>)</span>
@@ -449,7 +449,7 @@ Returns the value of attribute output_file
 </div>
 
     <div id="footer">
-  Generated on Mon Aug 13 12:32:35 2012 by
+  Generated on Mon Aug 13 12:51:43 2012 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.2.1 (ruby-1.9.2).
 </div>

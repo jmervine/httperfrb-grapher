@@ -1,7 +1,8 @@
 HTTPerf::Grapher
 ================
 
-### 0.0.2
+
+### 0.0.3
 
 * Fixed critial bug which breaks httperfrb
 
