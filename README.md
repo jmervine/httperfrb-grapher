@@ -32,6 +32,18 @@ If your verbose output contains the following type of output, this will work for
         Connection lifetime = 138.5
 
 
+You will also know if HTTPerf::Grapher is usable if your HTTPerf parsed results contain the following keys:
+
+        :connection_times
+        :connection_time_75_pct
+        :connection_time_80_pct
+        :connection_time_85_pct
+        :connection_time_90_pct
+        :connection_time_95_pct
+        :connection_time_99_pct
+
+
+
 ## Installing 'httperfrb'
 
 #### See: [httperfrb](http://www.github.com/rubyops/httperfrb/)
