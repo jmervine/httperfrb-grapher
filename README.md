@@ -13,4 +13,12 @@ HTTPerf::Grapher
 
 ## Usage - HTTPerf::Grapher
 
+        httperf_graph = HTTPerf::Grapher.new
+        httperf_graph.output_file = "/tmp/httperf_graph.png"
+        
+        #
+        # httperf_graph.graph_settings = { ... overide Gruff defaults }
+        # 
+       
+        httperf_graph.graph( HTTPerf::Parser( httperf_results ) ) 
 
