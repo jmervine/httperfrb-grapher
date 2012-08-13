@@ -8,27 +8,19 @@ HTTPerf::Grapher
 
 The gem for this has been yank as it isn't working. It was designed to queue off of "Connection lifetime = ", which is avaiable in a specific installation of httperf I have been using that wasn't set up by me. However, I'm starting to think that this installation was hacked to include this output. Most standard installations that I've tested this code with fail, because this string isn't output. So I may have to abandon this effort.
 
+You can use this with my version of [httperf](https://github.com/rubyops/httperf), which adds the necessary output. *This is very experimental, so use at your own risk.*
+
 If your verbose output contains the following type of output, this will work for you:
 
-        RT0:719.969988  200
         Connection lifetime = 719.5
-        RT1:575.627089  200
         Connection lifetime = 575.5
-        RT2:285.670996  200
         Connection lifetime = 285.5
-        RT3:156.943083  200
         Connection lifetime = 156.5
-        RT4:400.596857  200
         Connection lifetime = 400.5
-        RT5:145.324945  200
         Connection lifetime = 145.5
-        RT6:349.030972  200
         Connection lifetime = 349.5
-        RT7:583.013058  200
         Connection lifetime = 583.5
-        RT8:147.639990  200
         Connection lifetime = 147.5
-        RT9:138.216972  200
         Connection lifetime = 138.5
 
 
