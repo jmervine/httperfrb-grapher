@@ -10,6 +10,8 @@ The gem for this has been yank as it isn't working. It was designed to queue off
 
 You can use this with my version of [httperf](https://github.com/rubyops/httperf), which adds the necessary output. *This is very experimental, so use at your own risk.*
 
+Additionall, [httperfrb](http://github.com/rubyops/httperfrb) has the supporting parsing code removed from master, you'll need to build your gem from the [grapher_handler branch](https://github.com/rubyops/httperfrb/tree/grapher_handler). I intend to update httperfrb, to automagically parse "Connection lifetime =" if it's there and work all nice without it.
+
 If your verbose output contains the following type of output, this will work for you:
 
         Connection lifetime = 719.5
