@@ -6,7 +6,7 @@ HTTPerf::Grapher
 
 ### WARNING
 
-This isn't working in all cases. 
+This isn't working in all cases. It was designed to queue off of "Connection lifetime = ", which is avaiable in a specific installation of httperf I have been using, which wasn't set up by me. However, I'm starting to think that this installation was hacked to include this output. Most standard installations that I've tested this code with fail, because this string isn't output. So I may have to abandon this effort.
 
 ## Installing 'httperfrb'
 
