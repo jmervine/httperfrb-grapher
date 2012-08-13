@@ -1,3 +1,8 @@
+$:.unshift File.dirname(__FILE__)
+require 'httperf'
+require 'httperf/parser'
+require 'grapher'
+require 'grapher/version'
 require 'gruff'
 class HTTPerf
   class Grapher

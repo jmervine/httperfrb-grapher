@@ -1,16 +1,12 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/jmervine/Development/httperfrb-grapher/lib/httperf.rb": [
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null
-      ],
       "/home/jmervine/Development/httperfrb-grapher/lib/httperf/grapher.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
         1,
         1,
         1,
@@ -67,6 +63,6 @@
         null
       ]
     },
-    "timestamp": 1344886355
+    "timestamp": 1344886570
   }
 }

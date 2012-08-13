@@ -7,7 +7,7 @@ SimpleCov.start do
     add_filter "version.rb"
 end
 
-require './lib/httperf'
+require './lib/httperf/grapher'
 
 $bad_params = { "bar" => "param" }
 $good_params = { "server" => "localhost", "port" => 8080, "uri" => "/foo/bar" }
