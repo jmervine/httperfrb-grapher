@@ -11,6 +11,6 @@
 		  #graph
 		    should create a graph
 		
-		Finished in 0.25224 seconds
+		Finished in 0.25305 seconds
 		6 examples, 0 failures
-		Coverage report generated for RSpec to /home/jmervine/Development/httperfrb-grapher/coverage. 36 / 38 LOC (94.74%) covered.
+		Coverage report generated for RSpec to /home/jmervine/Development/httperfrb-grapher/coverage. 37 / 39 LOC (94.87%) covered.
