@@ -25,5 +25,5 @@ This isn't working in all cases.
         # httperf_graph.graph_settings = { ... overide Gruff defaults }
         # 
        
-        httperf_graph.graph( HTTPerf::Parser( httperf_results ) ) 
+        httperf_graph.graph( HTTPerf::Parser( httperf_verbose_results ) ) 
 
