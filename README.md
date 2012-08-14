@@ -58,3 +58,4 @@ You will also know if HTTPerf::Grapher is usable if your HTTPerf parsed results 
 
 ### Example Image
 
+![rspec result image](https://raw.github.com/rubyops/httperfrb-grapher/master/httperf_test.png)
