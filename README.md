@@ -4,7 +4,9 @@ HTTPerf::Grapher
 ### [Documentation](http://rubyops.github.com/httperfrb-grapher/doc/) | [Coverage](http://rubyops.github.com/httperfrb-grapher/coverage/) | [RSpec Out](https://github.com/rubyops/httperfrb-grapher/blob/master/RSPECOUT.md)
 
 
-### WARNING
+### WARNINGS
+
+This may or may not be working at this moment -- this is still very much beta. Currently, I believe (but need to verify) that the parser might not be working correctly in all cases.
 
 You can use this with my version of [httperf](https://github.com/rubyops/httperf), which adds the necessary output. *This is very experimental, so use at your own risk.* 
 
