@@ -56,4 +56,5 @@ You will also know if HTTPerf::Grapher is usable if your HTTPerf parsed results 
        
         httperf_graph.graph( HTTPerf::Parser( httperf_verbose_results ) ) 
 
+### Example Image
 
