@@ -19,7 +19,7 @@ class HTTPerf
     end
 
     def graph results
-      raise "missing connection times" unless results.has_key?(:connection_times)
+      raise "missing connection times, ensure that you have the correct version of httperf installed and it was run verbosely -- see documentation at http://github.com/rubyops/httperfrb-grapher" unless results.has_key?(:connection_times)
       graph = Gruff::Line.new 
 
       conn_times = results[:connection_times].map { |i| i.to_f }

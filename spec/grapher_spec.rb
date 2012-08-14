@@ -30,12 +30,17 @@ describe HTTPerf::Grapher do
   end
 
   describe "#graph" do
-    it "should create a graph" do
+    it "should create a graph with the correct verbose output" do
       parsed = HTTPerf::Parser.parse($verbose_raw)
       gh = HTTPerf::Grapher.new
       gh.output_file = "httperf_test.png"
       gh.graph(parsed).inspect.should match /^httperf_test\.png  800x600 DirectClass 16-bit/
       File.exists?("httperf_test.png").should be_true
+    end
+    it "should raise error without verbose output" do
+      parsed = HTTPerf::Parser.parse($results_raw)
+      gh = HTTPerf::Grapher.new
+      expect { gh.graph(parsed) }.to raise_error
     end
   end
 end

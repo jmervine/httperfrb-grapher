@@ -23,7 +23,7 @@
       <img src="./assets/0.5.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2012-08-13T12:51:43-07:00">2012-08-13T12:51:43-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2012-08-13T17:06:48-07:00">2012-08-13T17:06:48-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -34,7 +34,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         16.1
+         16.3
        </span>
     </span> hits/line)
   </h2>
@@ -66,7 +66,7 @@
         <td>35</td>
         <td>35</td>
         <td>0</td>
-        <td>16.1</td>
+        <td>16.3</td>
       </tr>
       
     </tbody>
@@ -171,14 +171,14 @@
           <code class="ruby">    def initialize gs={}</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="13">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="13">
+          <span class="hits">7</span>
           
           <code class="ruby">      @output_file    = &quot;httperf_graph.png&quot;</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="14">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="14">
+          <span class="hits">7</span>
           
           <code class="ruby">      @graph_settings = default_graph_settings.merge(gs)</code>
         </li>
@@ -225,10 +225,10 @@
           <code class="ruby">    def graph results</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="22">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="22">
+          <span class="hits">2</span>
           
-          <code class="ruby">      raise &quot;missing connection times&quot; unless results.has_key?(:connection_times)</code>
+          <code class="ruby">      raise &quot;missing connection times, ensure that you have the correct version of httperf installed and it was run verbosely -- see documentation at http://github.com/rubyops/httperfrb-grapher&quot; unless results.has_key?(:connection_times)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="23">
@@ -405,8 +405,8 @@
           <code class="ruby">        title:            &quot;HTTPerf Results&quot;</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="52">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="52">
+          <span class="hits">7</span>
           
           <code class="ruby">      }</code>
         </li>

@@ -9,8 +9,9 @@
 		  #graph_settings
 		    should merge graph settings
 		  #graph
-		    should create a graph
+		    should create a graph with the correct verbose output
+		    should raise error without verbose output
 		
-		Finished in 0.2233 seconds
-		6 examples, 0 failures
+		Finished in 0.22323 seconds
+		7 examples, 0 failures
 		Coverage report generated for RSpec to /home/jmervine/Development/httperfrb-grapher/coverage. 35 / 35 LOC (100.0%) covered.

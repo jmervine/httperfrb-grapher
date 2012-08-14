@@ -20,9 +20,11 @@ Gem::Specification.new do |s|
   s.add_development_dependency "simplecov"
   s.add_development_dependency "yard"
 
-  s.add_dependency "httperfrb", "~>0.3.0"
+  s.add_dependency "httperfrb", "~>0.3.3"
   s.add_dependency "rmagick", "~>2.13.1"
   s.add_dependency "gruff", "~>0.3.6"
+
+  s.requirements << "rubyops httperf 0.9.1 (https://github.com/rubyops/httperf)"
 
   s.files        = Dir.glob("lib/**/*") + %w(README.md HISTORY.md Gemfile)
   s.require_path = 'lib'
