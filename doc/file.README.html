@@ -65,6 +65,39 @@
 
 <h3><a href="http://rubyops.github.com/httperfrb-grapher/doc/">Documentation</a> | <a href="http://rubyops.github.com/httperfrb-grapher/coverage/">Coverage</a> | <a href="https://github.com/rubyops/httperfrb-grapher/blob/master/RSPECOUT.md">RSpec Out</a></h3>
 
+<h3>WARNING</h3>
+
+<p>You can use this with my version of <a href="https://github.com/rubyops/httperf">httperf</a>, which adds the necessary output. <em>This is very experimental, so use at your own risk.</em> </p>
+
+<p>If your verbose output contains the following type of output, this will work for you:</p>
+
+<pre class="code ruby"><code>    <span class='const'>Connection</span> <span class='id identifier rubyid_lifetime'>lifetime</span> <span class='op'>=</span> <span class='float'>719.5</span>
+    <span class='const'>Connection</span> <span class='id identifier rubyid_lifetime'>lifetime</span> <span class='op'>=</span> <span class='float'>575.5</span>
+    <span class='const'>Connection</span> <span class='id identifier rubyid_lifetime'>lifetime</span> <span class='op'>=</span> <span class='float'>285.5</span>
+    <span class='const'>Connection</span> <span class='id identifier rubyid_lifetime'>lifetime</span> <span class='op'>=</span> <span class='float'>156.5</span>
+    <span class='const'>Connection</span> <span class='id identifier rubyid_lifetime'>lifetime</span> <span class='op'>=</span> <span class='float'>400.5</span>
+    <span class='const'>Connection</span> <span class='id identifier rubyid_lifetime'>lifetime</span> <span class='op'>=</span> <span class='float'>145.5</span>
+    <span class='const'>Connection</span> <span class='id identifier rubyid_lifetime'>lifetime</span> <span class='op'>=</span> <span class='float'>349.5</span>
+    <span class='const'>Connection</span> <span class='id identifier rubyid_lifetime'>lifetime</span> <span class='op'>=</span> <span class='float'>583.5</span>
+    <span class='const'>Connection</span> <span class='id identifier rubyid_lifetime'>lifetime</span> <span class='op'>=</span> <span class='float'>147.5</span>
+    <span class='const'>Connection</span> <span class='id identifier rubyid_lifetime'>lifetime</span> <span class='op'>=</span> <span class='float'>138.5</span>
+</code></pre>
+
+<p>You will also know if HTTPerf::Grapher is usable if your HTTPerf parsed results contain the following keys:</p>
+
+<pre class="code ruby"><code>    <span class='symbol'>:connection_times</span>
+    <span class='symbol'>:connection_time_75_pct</span>
+    <span class='symbol'>:connection_time_80_pct</span>
+    <span class='symbol'>:connection_time_85_pct</span>
+    <span class='symbol'>:connection_time_90_pct</span>
+    <span class='symbol'>:connection_time_95_pct</span>
+    <span class='symbol'>:connection_time_99_pct</span>
+</code></pre>
+
+<h2>Installing &#39;rubyops httperf&#39;</h2>
+
+<h4>See: <a href="http://www.rubyops.net/2012/08/13/httperf-0_9_1_with_individual_connection_times">httperf-0.9.1 with individual connection times</a> for installation instructions.</h4>
+
 <h2>Installing &#39;httperfrb&#39;</h2>
 
 <h4>See: <a href="http://www.github.com/rubyops/httperfrb/">httperfrb</a></h4>
@@ -82,12 +115,12 @@
 </span>    <span class='comment'># httperf_graph.graph_settings = { ... overide Gruff defaults }
 </span>    <span class='comment'># 
 </span>
-    <span class='id identifier rubyid_httperf_graph'>httperf_graph</span><span class='period'>.</span><span class='id identifier rubyid_graph'>graph</span><span class='lparen'>(</span> <span class='const'>HTTPerf</span><span class='op'>::</span><span class='const'>Parser</span><span class='lparen'>(</span> <span class='id identifier rubyid_httperf_results'>httperf_results</span> <span class='rparen'>)</span> <span class='rparen'>)</span> 
+    <span class='id identifier rubyid_httperf_graph'>httperf_graph</span><span class='period'>.</span><span class='id identifier rubyid_graph'>graph</span><span class='lparen'>(</span> <span class='const'>HTTPerf</span><span class='op'>::</span><span class='const'>Parser</span><span class='lparen'>(</span> <span class='id identifier rubyid_httperf_verbose_results'>httperf_verbose_results</span> <span class='rparen'>)</span> <span class='rparen'>)</span> 
 </code></pre>
 </div></div>
 
     <div id="footer">
-  Generated on Mon Aug 13 17:06:48 2012 by
+  Generated on Mon Aug 13 17:09:40 2012 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.2.1 (ruby-1.9.2).
 </div>

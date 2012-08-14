@@ -12,6 +12,6 @@
 		    should create a graph with the correct verbose output
 		    should raise error without verbose output
 		
-		Finished in 0.22323 seconds
+		Finished in 0.22539 seconds
 		7 examples, 0 failures
 		Coverage report generated for RSpec to /home/jmervine/Development/httperfrb-grapher/coverage. 35 / 35 LOC (100.0%) covered.

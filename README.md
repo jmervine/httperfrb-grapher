@@ -6,11 +6,7 @@ HTTPerf::Grapher
 
 ### WARNING
 
-The gem for this has been yank as it isn't working. It was designed to queue off of "Connection lifetime = ", which is avaiable in a specific installation of httperf I have been using that wasn't set up by me. However, I'm starting to think that this installation was hacked to include this output. Most standard installations that I've tested this code with fail, because this string isn't output. So I may have to abandon this effort.
-
-You can use this with my version of [httperf](https://github.com/rubyops/httperf), which adds the necessary output. *This is very experimental, so use at your own risk.*
-
-Additionally, [httperfrb](http://github.com/rubyops/httperfrb) has the supporting parsing code removed from master, you'll need to build your gem from the [grapher_handler branch](https://github.com/rubyops/httperfrb/tree/grapher_handler). I intend to update httperfrb, to automagically parse "Connection lifetime =" if it's there and work all nice without it.
+You can use this with my version of [httperf](https://github.com/rubyops/httperf), which adds the necessary output. *This is very experimental, so use at your own risk.* 
 
 If your verbose output contains the following type of output, this will work for you:
 
@@ -37,6 +33,9 @@ You will also know if HTTPerf::Grapher is usable if your HTTPerf parsed results 
         :connection_time_99_pct
 
 
+## Installing 'rubyops httperf'
+
+#### See: [httperf-0.9.1 with individual connection times](http://www.rubyops.net/2012/08/13/httperf-0_9_1_with_individual_connection_times) for installation instructions.
 
 ## Installing 'httperfrb'
 
@@ -56,4 +55,5 @@ You will also know if HTTPerf::Grapher is usable if your HTTPerf parsed results 
         # 
        
         httperf_graph.graph( HTTPerf::Parser( httperf_verbose_results ) ) 
+
 
