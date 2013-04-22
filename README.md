@@ -6,7 +6,7 @@ HTTPerf::Grapher
 
 ### WARNINGS
 
-This may or may not be working at this moment -- this is still very much beta. Currently, I believe (but need to verify) that the parser might not be working correctly in all cases.
+This may or may not be working at this moment -- this is still very much beta.
 
 You can use this with my version of [httperf](https://github.com/rubyops/httperf), which adds the necessary output. *This is very experimental, so use at your own risk.* 
 
