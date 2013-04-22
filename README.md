@@ -41,11 +41,11 @@ You will also know if HTTPerf::Grapher is usable if your HTTPerf parsed results 
 
 ## Installing 'httperfrb'
 
-#### See: [httperfrb](http://www.github.com/rubyops/httperfrb/)
+#### See: [HTTPerf.rb](http://www.rubyops.net/gems/httperfrb)
 
 ## Usage - HTTPerf
 
-#### See: [httperfrb](http://www.github.com/rubyops/httperfrb/)
+#### See: [HTTPerf.rb](http://www.rubyops.net/gems/httperfrb)
 
 ## Usage - HTTPerf::Grapher
 
